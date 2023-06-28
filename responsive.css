@@ -1,0 +1,325 @@
+/* --------------HAMBURGER---------------------------------- */
+.nav-desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  #nav-icon3 {
+    width: 38px;
+    height: 20px;
+    position: relative;
+    
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  #nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 9px;
+}
+  #nav-icon3 span:nth-child(4) {
+    top: 18px;
+  }
+  #nav-icon3.open span:nth-child(1) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+  }
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #nav-icon3.open span:nth-child(4) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+  }
+  .aai a {
+    color: #333333;
+  }
+ 
+  #links .menu_item {
+    font-size: 30px;
+    margin-top: 30px;
+
+    height: unset;
+  }
+  #links .menu_item a {
+    font-size: 16px;
+    color: black;
+  }
+
+
+  .links {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 20;
+
+    display: flex;
+    justify-content: center;
+
+
+    top: 90px;
+    left: 100%;
+    
+
+    background-color: rgb(255, 255, 255);
+
+    
+
+    transition:  all 0.5s;
+  }
+
+
+
+  #links.open {
+    left: 10%;
+  }
+
+
+
+  @media only screen and (max-width: 1024px){
+
+    .hero_box .controls{
+      left: 25%;
+      top: 80%;
+      width: 50%;
+    }
+
+    .column_container .column .col_el{
+      min-height: 420px;
+    }
+
+    .agency_container{
+      padding: 150px 20px;
+
+    }
+    .agency_wrap{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .agency_h1{
+      width: 100%;
+    }
+    .agency_h1 h1 {
+      font-size: 32px;
+      max-width: unset;
+    }
+    .agency_text{
+      width: unset;
+      margin: unset; 
+    }
+
+    .team_contaner{
+      scroll-margin-top: 120px;
+    }
+
+    .team_wrap{
+      padding: 50px 0px;
+    }
+
+    .pictures_container{
+      scroll-margin-top: 220px;
+    }
+    .popup_img img{
+      max-height: auto;
+      max-width: 90%;
+    }
+    .footer_col:first-of-type{
+      width: 33.3%;
+      padding-right: 30px;
+    }
+    .footer_col{
+      width: 33.3%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    .menu{
+      display: none;
+    }
+
+    .mobile_nav{
+      display: unset;
+
+      margin-right: 50px;
+    }
+
+    .mobile_items{
+      width: 100%;
+    }
+    .mobile_items .menu_item{
+      display: flex;
+      justify-content: center;
+
+      margin: 0;
+    }
+
+    .hero_text h1{
+      font-size: 48px;
+    }
+
+    .shop_drop {
+      color: black;
+      margin: 30px 0px 0px 0px !important;
+    }
+    .shop_drop ul{
+      list-style: none;
+      font-size: 14px;
+      padding: 0px;
+      margin: 0;
+    }
+    .shop_item{
+      text-align: center;
+    }
+
+    .shop_hidden_items{
+      display: none;
+
+    }
+    .shop_item:hover .shop_hidden_items{
+      display: unset;
+    }
+
+
+    .design_text h1{
+      font-size: 32px;
+    }
+
+    .agency_container{
+      scroll-margin-top: 100px;
+    }
+
+    .column_container{
+      flex-direction: column;
+    }
+    .column{
+      max-width: 620px;
+      margin-bottom: 60px;
+    }
+    /* .column_container .column .col_el{
+      padding: 49px 20px 10px 39px;
+    } */
+    .column .col_num{
+      margin-bottom: 50px !important;
+    }
+
+
+
+
+    .team_wrap{
+      flex-direction: column;
+    }
+    .team_wrap img{
+      max-width: 100%;
+      padding: 0;
+      
+    }
+    .feature{
+      display: unset;
+      text-align: center;
+    }
+    .feature i{
+      margin: 10px 0px;
+    }
+
+
+    .pictures_container .text_container{
+      display: unset;
+    }
+    .text_container .text{
+      max-width: unset;
+    }
+    .text_container .btn{
+      display: unset;
+      padding: 0px;
+
+      margin: 20px 0px 50px 0px;
+    }
+    .pictures_wrap_flex{
+      flex-direction: column;
+    }
+    .pictures_container .pictures_wrap_flex img{
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .pictures_wrap_grid{
+      display: unset;
+      
+    }
+    .pictures_container .pictures_wrap_grid img{
+      margin-bottom: 30px;
+    }
+    .pictures_container .pictures_wrap_grid img:last-of-type{
+      margin-bottom: 0px;
+    }
+
+    .popup_img img {
+      top: 25%;
+    }
+
+    footer{
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+
+
+    .footer_col:first-of-type{
+      width: 100%;
+    }
+
+    .footer_col1 p{
+      max-width: 95%;
+    }
+    .footer_col{
+      width: 100%;
+      padding: 0px 10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 359px) {
+    .hero_title{
+      display: none;
+    }
+  }
